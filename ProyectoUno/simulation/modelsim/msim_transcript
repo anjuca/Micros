@@ -1,0 +1,305 @@
+# do ALU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/camilo/intelFPGA_lite/17.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/camilo/avr_core_v14/rtl/core {/home/camilo/avr_core_v14/rtl/core/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:14:05 on Aug 22,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/camilo/avr_core_v14/rtl/core" /home/camilo/avr_core_v14/rtl/core/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:14:06 on Aug 22,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/camilo/avr_core_v14/rtl/core {/home/camilo/avr_core_v14/rtl/core/alu_avr.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:14:06 on Aug 22,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/camilo/avr_core_v14/rtl/core" /home/camilo/avr_core_v14/rtl/core/alu_avr.v 
+# -- Compiling module alu_avr
+# 
+# Top level modules:
+# 	alu_avr
+# End time: 20:14:06 on Aug 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/camilo/Documentos/Micros/ProyectoUno/CONEXIONADO.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:14:06 on Aug 22,2017
+# vcom -reportprogress 300 -93 -work work /home/camilo/Documentos/Micros/ProyectoUno/CONEXIONADO.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CONEXIONADO
+# -- Compiling architecture rtl of CONEXIONADO
+# End time: 20:14:07 on Aug 22,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/camilo/Documentos/Micros/ProyectoUno/StatusRegister.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:14:07 on Aug 22,2017
+# vcom -reportprogress 300 -93 -work work /home/camilo/Documentos/Micros/ProyectoUno/StatusRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity StatusRegister
+# -- Compiling architecture rtl of StatusRegister
+# End time: 20:14:07 on Aug 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+view source
+vsim work.conexionado
+# vsim work.conexionado 
+# Start time: 20:28:23 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+force -freeze sim:/conexionado/cp2 1 0, 0 {50 ps} -r 100
+do cone
+# Cannot open macro file: cone
+do conexion.do
+# End time: 21:37:51 on Aug 22,2017, Elapsed time: 1:09:28
+# Errors: 1, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 21:37:51 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+# ** Warning: (vsim-168) The time value, 50 ps, is smaller than the simulator resolution so no run occurred.
+# Error in macro ./conexion.do line 5
+# ** Warning: (vsim-168) The time value, 50 ps, is smaller than the simulator resolution so no run occurred.
+#     while executing
+# "force -freeze sim:/conexionado/cp2 1 0, 0 {50 ps} -r 100"
+do conexion.do
+# End time: 21:40:35 on Aug 22,2017, Elapsed time: 0:02:44
+# Errors: 2, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 21:40:35 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
+# Error in macro ./conexion.do line 5
+# ** Error: (vsim-3464) Period of -repeat must not be less than the waveform length.
+# 
+#     while executing
+# "force -freeze sim:/conexionado/cp2 1 0, 0 {50 ms} -r 100"
+force -freeze sim:/conexionado/cp2 1 0, 0 {500 ns} -r 1000
+do conexion.do
+# End time: 21:41:49 on Aug 22,2017, Elapsed time: 0:01:14
+# Errors: 1, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 21:41:49 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+# ** Error (suppressible): (vsim-4008) Object 'reg_rd_hg_in' not found.
+# Error in macro ./conexion.do line 20
+# ** Error (suppressible): (vsim-4008) Object 'reg_rd_hg_in' not found.
+# 
+#     while executing
+# "force reg_rd_hg_in 00010111  "
+do conexion.do
+# End time: 21:42:56 on Aug 22,2017, Elapsed time: 0:01:07
+# Errors: 1, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 21:42:56 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+# ** Error (suppressible): (vsim-4008) Object 'ref_rd_in' not found.
+# Error in macro ./conexion.do line 21
+# ** Error (suppressible): (vsim-4008) Object 'ref_rd_in' not found.
+# 
+#     while executing
+# "force ref_rd_in 00010001"
+do conexion.do
+# End time: 21:43:32 on Aug 22,2017, Elapsed time: 0:00:36
+# Errors: 1, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 21:43:32 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+force -freeze sim:/conexionado/cp2 1 0, 0 {50 ns} -r 100
+do conexion.do
+# End time: 22:05:15 on Aug 22,2017, Elapsed time: 0:21:43
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:05:15 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:06:59 on Aug 22,2017, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:06:59 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:08:16 on Aug 22,2017, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:08:16 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:15:21 on Aug 22,2017, Elapsed time: 0:07:05
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:15:21 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:15:51 on Aug 22,2017, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:15:51 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:19:41 on Aug 22,2017, Elapsed time: 0:03:50
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:19:41 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:20:00 on Aug 22,2017, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:20:00 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:20:39 on Aug 22,2017, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:20:39 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+do conexion.do
+# End time: 22:38:14 on Aug 22,2017, Elapsed time: 0:17:35
+# Errors: 0, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:38:14 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+# ** Error: Value length (1) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0.
+# Error in macro ./conexion.do line 27
+# Value length (1) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0.
+# 
+#     while executing
+# "force reg_h_out 0"
+do conexion.do
+# End time: 22:38:47 on Aug 22,2017, Elapsed time: 0:00:33
+# Errors: 2, Warnings: 0
+# vsim -t ns CONEXIONADO 
+# Start time: 22:38:47 on Aug 22,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.conexionado(rtl)
+# Loading work.alu_avr
+# Loading work.reg_file
+# Loading work.statusregister(rtl)
+# End time: 22:39:41 on Aug 22,2017, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0

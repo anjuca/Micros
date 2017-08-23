@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/camilo/Documentos/Micros/ProyectoUno/simulation/modelsim
+valu_avr
+Z1 !s110 1503450846
+!i10b 1
+!s100 LfMHFRK:gHl>GShaJAZDP2
+IJ4;1Fm4O89U8z<HNNhjel0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1502195902
+8/home/camilo/avr_core_v14/rtl/core/alu_avr.v
+F/home/camilo/avr_core_v14/rtl/core/alu_avr.v
+L0 14
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1503450846.000000
+!s107 /home/camilo/avr_core_v14/rtl/core/alu_avr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/camilo/avr_core_v14/rtl/core|/home/camilo/avr_core_v14/rtl/core/alu_avr.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/camilo/avr_core_v14/rtl/core
+Z8 tCvgOpt 0
+Econexionado
+Z9 w1503423782
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z13 8/home/camilo/Documentos/Micros/ProyectoUno/CONEXIONADO.vhd
+Z14 F/home/camilo/Documentos/Micros/ProyectoUno/CONEXIONADO.vhd
+l0
+L8
+VQ]93nd=Cl>gUnDm9_FdG:2
+!s100 9Y8FT=LAPaH0<W5I0HXFW1
+Z15 OV;C;10.5b;63
+31
+Z16 !s110 1503450847
+!i10b 1
+R5
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/camilo/Documentos/Micros/ProyectoUno/CONEXIONADO.vhd|
+Z18 !s107 /home/camilo/Documentos/Micros/ProyectoUno/CONEXIONADO.vhd|
+!i113 1
+Z19 o-93 -work work
+Z20 tExplicit 1 CvgOpt 0
+Artl
+R10
+R11
+R12
+DEx4 work 11 conexionado 0 22 Q]93nd=Cl>gUnDm9_FdG:2
+l147
+L52
+VDzT8XOfl:1M@E`Ig:R6P=2
+!s100 IgSWK4B4Za6^jG[S7lBH_0
+R15
+31
+R16
+!i10b 1
+R5
+R17
+R18
+!i113 1
+R19
+R20
+vreg_file
+R1
+!i10b 1
+!s100 4Aaz9FRP8jd>7SNIadoS<3
+ITCmFLNzHJ8j;AhnEaJKDg2
+R2
+R0
+R3
+8/home/camilo/avr_core_v14/rtl/core/reg_file.v
+F/home/camilo/avr_core_v14/rtl/core/reg_file.v
+L0 15
+R4
+r1
+!s85 0
+31
+!s108 1503450845.000000
+!s107 /home/camilo/avr_core_v14/rtl/core/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/camilo/avr_core_v14/rtl/core|/home/camilo/avr_core_v14/rtl/core/reg_file.v|
+!i113 1
+R6
+R7
+R8
+Estatusregister
+Z21 w1503422364
+R10
+R11
+R12
+R0
+Z22 8/home/camilo/Documentos/Micros/ProyectoUno/StatusRegister.vhd
+Z23 F/home/camilo/Documentos/Micros/ProyectoUno/StatusRegister.vhd
+l0
+L8
+V9Ln7bG_4Va382lj4WfYCP3
+!s100 j09:TCOO2[3zJ8OQUM>Mz3
+R15
+31
+R16
+!i10b 1
+Z24 !s108 1503450847.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/camilo/Documentos/Micros/ProyectoUno/StatusRegister.vhd|
+Z26 !s107 /home/camilo/Documentos/Micros/ProyectoUno/StatusRegister.vhd|
+!i113 1
+R19
+R20
+Artl
+R10
+R11
+R12
+DEx4 work 14 statusregister 0 22 9Ln7bG_4Va382lj4WfYCP3
+l23
+L21
+V:iWif`fa^98Vcd_[c8PJ02
+!s100 Ab<M_?`Ee7^C:WeS;VIQ<0
+R15
+31
+R16
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R19
+R20

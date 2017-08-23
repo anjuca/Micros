@@ -1,0 +1,109 @@
+-- Quartus Prime VHDL Template
+-- Signed Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity conexionado is
+
+	generic
+	(
+		DATA_WIDTH : natural := 8
+	);
+
+	port 
+	(
+			 alu_data_r_in: in std_logic_vector(7 downto 0); 
+          alu_data_d_in: in std_logic_vector(7 downto 0); 
+	       idc_add: in std_logic;
+	       idc_and: in std_logic; 
+			 idc_or : in std_logic;
+	       idc_eor: in std_logic;
+	       idc_neg: in std_logic;
+			 
+			 cp2    : in std_logic;
+			 cp2en  : in std_logic;
+			 ireset : in std_logic;
+			 reg_rd_in: in std_logic_vector(7 downto 0);
+		  	 reg_rd_adr: in std_logic_vector(4 downto 0); 
+			 reg_rr_adr: in std_logic_vector(4 downto 0);
+			 reg_rd_wr : in std_logic; 
+			 post_inc  : in std_logic;
+			 pre_dec   : in std_logic;
+			 reg_h_wr  : in std_logic;
+			 reg_h_adr : in std_logic_vector(2 downto 0); 
+		    w_op		  : in std_logic;
+			 reg_rd_hb_in: in std_logic_vector(7 downto 0); 
+
+	   
+	       alu_data_out: out std_logic_vector(7 downto 0); 
+	       alu_c_flag_status_out: out std_logic; 
+	       alu_z_flag_status_out: out std_logic; 
+	       alu_n_flag_status_out: out std_logic; 
+	       alu_v_flag_status_out: out std_logic; 
+	       alu_s_flag_status_out: out std_logic; 
+	       alu_h_flag_status_out: out std_logic; 
+			 
+			 reg_rr_hb_out: out std_logic_vector(7 downto 0);  
+			 spm_out: out std_logic_vector(15 downto 0); 
+			 reg_z_out: out std_logic_vector(15 downto 0);
+			 reg_h_out: out std_logic_vector(15 downto 0) 
+			 
+	);
+
+end entity;
+
+architecture rtl of conexionado is
+	component alu_avr is
+		port (
+			
+			 alu_data_r_in: in std_logic_vector(7 downto 0); 
+          alu_data_d_in: in std_logic_vector(7 downto 0); 
+	       idc_add: in std_logic;
+	       idc_and: in std_logic; 
+			 idc_or : in std_logic;
+	       idc_eor: in std_logic;
+	       idc_neg: in std_logic;
+			 alu_c_flag_in: in std_logic;
+	       alu_z_flag_in: in std_logic; 
+	       idc_adc : in std_logic;
+	       idc_adiw: in std_logic; 
+	       idc_sub : in std_logic; 
+	       idc_subi: in std_logic;
+	       idc_sbc : in std_logic;
+	       idc_sbci: in std_logic; 
+	       idc_sbiw: in std_logic;
+	       adiw_st : in std_logic;
+	       sbiw_st : in std_logic;
+	       idc_andi: in std_logic; 
+			 idc_ori : in std_logic;
+	       idc_com : in std_logic;
+	       idc_inc : in std_logic; 
+	       idc_dec : in std_logic;
+	       idc_cp  : in std_logic;
+	       idc_cpc : in std_logic;
+	       idc_cpi : in std_logic;
+	       idc_cpse: in std_logic;
+	       idc_lsr : in std_logic;
+	       idc_ror : in std_logic;
+	       idc_asr : in std_logic;
+	       idc_swap: in std_logic;
+	       
+			 
+			 alu_data_out  :out std_logic_vector(7 downto 0); 
+	       alu_c_flag_out:out std_logic; 
+	       alu_z_flag_out:out std_logic; 
+	       alu_n_flag_out:out std_logic; 
+	       alu_v_flag_out:out std_logic; 
+	       alu_s_flag_out:out std_logic; 
+	       alu_h_flag_out:out std_logic
+	        
+	
+		);
+	end component;
+begin
+
+	result <= a + b;
+
+end rtl;

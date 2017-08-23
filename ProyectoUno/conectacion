@@ -1,0 +1,105 @@
+
+module conexionado (alu_data_r_in, 
+						  alu_data_d_in, 
+						 alu_c_flag_in, 
+						 alu_z_flag_in, 
+						 idc_add, 
+						 idc_adc, 
+						 idc_adiw, 
+						 idc_sub, 
+						 idc_subi, 
+						 idc_sbc, 
+						 idc_sbci, 
+						 idc_sbiw, 
+						 adiw_st, 
+						 sbiw_st, 
+						 idc_and, 
+						 idc_andi, 
+						 idc_or, 
+						 idc_ori, 
+						 idc_eor, 
+						 idc_com, 
+						 idc_neg, 
+						 idc_inc, 
+						 idc_dec, 
+						 idc_cp, 
+						 idc_cpc, 
+						 idc_cpi, 
+						 idc_cpse, 
+						 idc_lsr, 
+						 idc_ror, 
+						 idc_asr, 
+						 idc_swap, 
+						 alu_data_out, 
+						 alu_c_flag_out, 
+						 alu_z_flag_out, 
+						 alu_n_flag_out, 
+						 alu_v_flag_out, 
+						 alu_s_flag_out, 
+						 alu_h_flag_out);
+						 
+						 
+	input [7:0]  alu_data_r_in;
+   input [7:0]  alu_data_d_in;
+   
+   input        alu_c_flag_in;
+   input        alu_z_flag_in;
+   
+   // OPERATION SIGNALS INPUTS
+   input        idc_add;
+   input        idc_adc;
+   input        idc_adiw;
+   input        idc_sub;
+   input        idc_subi;
+   input        idc_sbc;
+   input        idc_sbci;
+   input        idc_sbiw;
+   
+   input        adiw_st;
+   input        sbiw_st;
+	
+   
+   input        idc_and;
+   input        idc_andi;
+   input        idc_or;
+   input        idc_ori;
+   input        idc_eor;
+   input        idc_com;
+   input        idc_neg;
+   
+   input        idc_inc;
+   input        idc_dec;
+   
+   input        idc_cp;
+   input        idc_cpc;
+   input        idc_cpi;
+   input        idc_cpse;
+   
+   input        idc_lsr;
+   input        idc_ror;
+   input        idc_asr;
+   input        idc_swap;
+	
+	//OUTPUT
+	output       alu_c_flag_status_out; 
+	output		 alu_z_flag_status_out; 
+	output		 alu_n_flag_status_out; 
+	output		 alu_v_flag_status_out; 
+	output		 alu_s_flag_status_out; 
+	output		 alu_h_flag_status_out;
+   
+   // DATA OUTPUT
+   wire [7:0] alu_data_out;
+   
+   // WIRE
+   wire       alu_c_flag_out;
+   wire		  alu_z_flag_out;
+   wire       alu_n_flag_out;
+   wire	     alu_v_flag_out;
+   wire       alu_s_flag_out;
+   wire       alu_h_flag_out;
+	
+	//CONEXIONADO
+	
+	
+	endmodule
