@@ -1,0 +1,240 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/camilo/Documentos/avance_2/avr109/simulation/modelsim
+vavr109
+Z1 !s110 1503998129
+!i10b 1
+!s100 e=V<>?_0i`medKzWBgd=J0
+I8dSJJEG5Z<5UU;UKJS^Pn1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1503995754
+8/home/camilo/Documentos/avance_2/avr109/avr109.v
+F/home/camilo/Documentos/avance_2/avr109/avr109.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1503998129.000000
+!s107 /home/camilo/Documentos/avance_2/avr109/avr109.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/camilo/Documentos/avance_2/avr109|/home/camilo/Documentos/avance_2/avr109/avr109.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/camilo/Documentos/avance_2/avr109
+Z7 tCvgOpt 0
+vavr109rx
+R1
+!i10b 1
+!s100 l^W4jP68BQzc?o`B7X:;D3
+I?2l=H7OmPUX<22@Lf?TcC0
+R2
+R0
+w1503594552
+8/home/camilo/Documentos/avance_2/avr109/avr109rx.v
+F/home/camilo/Documentos/avance_2/avr109/avr109rx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/camilo/Documentos/avance_2/avr109/avr109rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/camilo/Documentos/avance_2/avr109|/home/camilo/Documentos/avance_2/avr109/avr109rx.v|
+!i113 1
+R5
+R6
+R7
+vavr109tx
+R1
+!i10b 1
+!s100 Y^X67;7N]mXWL_K><Ak`j0
+IFA<9ZOF;7mL9TPGB@G<ZF1
+R2
+R0
+w1503594555
+8/home/camilo/Documentos/avance_2/avr109/avr109tx.v
+F/home/camilo/Documentos/avance_2/avr109/avr109tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1503998128.000000
+!s107 /home/camilo/Documentos/avance_2/avr109/avr109tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/camilo/Documentos/avance_2/avr109|/home/camilo/Documentos/avance_2/avr109/avr109tx.v|
+!i113 1
+R5
+R6
+R7
+Econexion
+Z8 w1503777632
+Z9 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z12 8/home/camilo/Documentos/avance_2/avr109/conexion.vhd
+Z13 F/home/camilo/Documentos/avance_2/avr109/conexion.vhd
+l0
+L5
+V855cnjIAFj@6;?E`RoGV81
+!s100 QLPXcaiz0IY@Z3Yc]_SdC3
+Z14 OV;C;10.5b;63
+31
+Z15 !s110 1503998130
+!i10b 1
+R4
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/camilo/Documentos/avance_2/avr109/conexion.vhd|
+Z17 !s107 /home/camilo/Documentos/avance_2/avr109/conexion.vhd|
+!i113 1
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
+Artl
+R9
+R10
+R11
+DEx4 work 8 conexion 0 22 855cnjIAFj@6;?E`RoGV81
+l74
+L31
+VHomZhL@3UPQ^W1T^bl:ZR1
+!s100 >MB;C6gmHiJTgfLz`c`IT1
+R14
+31
+R15
+!i10b 1
+R4
+R16
+R17
+!i113 1
+R18
+R19
+Econtbit
+Z20 w1503777306
+R9
+R10
+R11
+R0
+Z21 8/home/camilo/Documentos/avance_2/avr109/contbit.vhd
+Z22 F/home/camilo/Documentos/avance_2/avr109/contbit.vhd
+l0
+L5
+VbLV;U^X<53>5TglLdZnKi0
+!s100 D;BE1XDe40CaZNzXfW9F@2
+R14
+31
+R15
+!i10b 1
+Z23 !s108 1503998130.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/camilo/Documentos/avance_2/avr109/contbit.vhd|
+Z25 !s107 /home/camilo/Documentos/avance_2/avr109/contbit.vhd|
+!i113 1
+R18
+R19
+Artl
+R9
+R10
+R11
+DEx4 work 7 contbit 0 22 bLV;U^X<53>5TglLdZnKi0
+l57
+L21
+Va`T?OfiKRJ1^_13UJOanM2
+!s100 4eQQoOJmLmj>S:hNFmb1Y2
+R14
+31
+R15
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R18
+R19
+Econttime
+Z26 w1503995798
+R9
+R10
+R11
+R0
+Z27 8/home/camilo/Documentos/avance_2/avr109/conttime.vhd
+Z28 F/home/camilo/Documentos/avance_2/avr109/conttime.vhd
+l0
+L5
+Vk2iHDL`M_IDY^l]Gg@7_@3
+!s100 >lSdZbag?EdX3LY?agzFf2
+R14
+31
+R15
+!i10b 1
+R23
+Z29 !s90 -reportprogress|300|-93|-work|work|/home/camilo/Documentos/avance_2/avr109/conttime.vhd|
+Z30 !s107 /home/camilo/Documentos/avance_2/avr109/conttime.vhd|
+!i113 1
+R18
+R19
+Artl
+R9
+R10
+R11
+DEx4 work 8 conttime 0 22 k2iHDL`M_IDY^l]Gg@7_@3
+l40
+L21
+VH33WDDa9=a1G7A;POV1K?0
+!s100 X:]4>GZB<kNdF5QKJaGM70
+R14
+31
+R15
+!i10b 1
+R23
+R29
+R30
+!i113 1
+R18
+R19
+Eregistro
+Z31 w1495035971
+R9
+R10
+R11
+R0
+Z32 8/home/camilo/Documentos/avance_2/avr109/registro.vhd
+Z33 F/home/camilo/Documentos/avance_2/avr109/registro.vhd
+l0
+L5
+VR;jg<^6Wh?[kn>L;:T:mQ0
+!s100 UE[NF[W;J8gMle6=cGDOW0
+R14
+31
+R15
+!i10b 1
+R23
+Z34 !s90 -reportprogress|300|-93|-work|work|/home/camilo/Documentos/avance_2/avr109/registro.vhd|
+Z35 !s107 /home/camilo/Documentos/avance_2/avr109/registro.vhd|
+!i113 1
+R18
+R19
+Artl
+R9
+R10
+R11
+DEx4 work 8 registro 0 22 R;jg<^6Wh?[kn>L;:T:mQ0
+l22
+L20
+V5iIamWgdz`]b^3]TARjWc2
+!s100 mWdedfgH`1n:hT<na5B>P0
+R14
+31
+R15
+!i10b 1
+R23
+R34
+R35
+!i113 1
+R18
+R19

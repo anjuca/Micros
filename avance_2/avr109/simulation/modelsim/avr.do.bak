@@ -1,0 +1,52 @@
+vsim -t ns conexion
+
+add wave *
+
+force clk 1 0,0 {10ns}  -r 20
+
+force rst 1
+run 10
+force rst 0 
+
+#para que se active, se debe enviar 0x1B
+force data "00011011"
+#corro por la cantidad de tiempo que se demora transmitiendo bit-bit
+run 36.1 us
+
+#Ahora, debo enviar el siguiente comando para que me cambie de estado
+# y proceder a enviar que accion quiero ejecutar
+
+force data "10101010"
+run 36.1 us
+
+force data "00011011"
+run 36.1 us
+
+force data "10101010"
+run 36.1 us
+
+force data "00011011"
+run 36.1 us
+
+force data "10101010"
+run 36.1 us
+
+force data "00011011"
+run 36.1 us
+
+#Y estando en el estado  idle se procede a enviar el dato de la accion
+#que quiero ejecutar
+
+force data "01000001"
+run 36.1 us
+
+#
+
+force data "11110000"
+run 36.1 us
+
+force data "11111111"
+run 36.1 us
+
+#force ena_in 0
+#run 0.4 ms
